@@ -5,8 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/lerevena' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/lerevena' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/lerevena-homepage' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/lerevena-homepage' : '',
 }
 
 module.exports = nextConfig
