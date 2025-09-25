@@ -21,6 +21,7 @@ import {
   Palette
 } from "lucide-react"
 import Link from "next/link"
+import { getAssetPath } from "@/lib/utils"
 
 interface ProductDetailProps {
   product: {
@@ -87,7 +88,7 @@ export function ProductDetailClient({ product }: ProductDetailProps) {
             {/* Main Image */}
             <div className="relative overflow-hidden rounded-2xl bg-white shadow-lg">
               <img
-                src={product.images[selectedImage]}
+                src={getAssetPath(product.images[selectedImage])}
                 alt={product.name}
                 className="w-full h-96 lg:h-[600px] object-cover"
               />
@@ -114,7 +115,7 @@ export function ProductDetailClient({ product }: ProductDetailProps) {
                   }`}
                 >
                   <img
-                    src={image}
+                    src={getAssetPath(image)}
                     alt={`${product.name} ${index + 1}`}
                     className="w-full h-full object-cover"
                   />

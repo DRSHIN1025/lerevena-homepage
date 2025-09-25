@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Star, Heart, ShoppingBag, ArrowLeft } from "lucide-react"
 import Link from "next/link"
+import { getAssetPath } from "@/lib/utils"
 
 export default function ProductsPage() {
   const products = [
@@ -112,7 +113,7 @@ export default function ProductsPage() {
             >
               <div className="relative overflow-hidden">
                 <img
-                  src={product.image}
+                  src={getAssetPath(product.image)}
                   alt={product.name}
                   className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
                 />

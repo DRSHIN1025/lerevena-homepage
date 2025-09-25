@@ -41,7 +41,7 @@ export default function CheckoutPage() {
                 <div className="flex gap-4">
                   <div className="w-20 h-20 bg-neutral-100 rounded-lg flex items-center justify-center">
                     <img
-                      src="/luxury-handbag.png"
+                      src={`${process.env.NODE_ENV === 'production' ? '/lerevena-homepage' : ''}/luxury-handbag.png`}
                       alt="Product"
                       className="w-full h-full object-cover rounded-lg"
                     />

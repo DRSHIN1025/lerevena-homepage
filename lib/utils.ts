@@ -7,6 +7,6 @@ export function cn(...inputs: ClassValue[]) {
 
 // Utility function to handle base path for assets
 export function getAssetPath(path: string): string {
-  const basePath = process.env.NODE_ENV === 'production' ? '/lerevena' : '';
+  const basePath = process.env.NODE_ENV === 'production' ? '/lerevena-homepage' : '';
   return `${basePath}${path}`;
 }
