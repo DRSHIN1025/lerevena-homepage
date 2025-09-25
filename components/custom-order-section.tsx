@@ -50,25 +50,33 @@ export function CustomOrderSection() {
     <section id="custom-order" className="py-24 bg-gradient-to-b from-background to-neutral-50/30">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-2 mb-4">
+        <div className="text-center mb-20">
+          <div className="flex items-center justify-center gap-2 mb-6">
             <Sparkles className="w-6 h-6 text-luxury-gold" />
             <Badge variant="outline" className="border-luxury-navy text-luxury-navy font-semibold">
               EXCLUSIVE SERVICE
             </Badge>
           </div>
-          <h2 className="text-4xl md:text-5xl font-serif text-luxury-navy mb-6">
-            당신만의 특별한 이야기를
-            <br />
-            <span className="text-luxury-navy font-bold relative">
+
+          <div className="mb-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-luxury-navy leading-[1.2] mb-4">
+              당신만의 특별한 이야기를
+            </h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-luxury-navy font-bold relative inline-block">
               함께 만들어갑니다
-              <div className="absolute -bottom-2 left-0 w-full h-1 bg-luxury-gold/30 rounded-full"></div>
-            </span>
-          </h2>
-          <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed">
-            45년 장인 정신으로 완성되는 세상에 하나뿐인 핸드백. 당신의 라이프스타일과 취향을 완벽하게 반영한 작품을
-            만나보세요.
-          </p>
+              <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-luxury-gold/40 rounded-full"></div>
+            </h2>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-4">
+            <p className="text-lg sm:text-xl text-luxury-charcoal leading-relaxed">
+              45년 장인 정신으로 완성되는 세상에 하나뿐인 핸드백.
+            </p>
+            <p className="text-lg sm:text-xl text-luxury-charcoal leading-relaxed">
+              당신의 라이프스타일과 취향을 완벽하게 반영한 작품을 만나보세요.
+            </p>
+            <div className="w-16 h-px bg-luxury-gold/30 mx-auto mt-6"></div>
+          </div>
         </div>
 
         {/* Services Grid */}
@@ -84,31 +92,33 @@ export function CustomOrderSection() {
                 onClick={() => setSelectedService(selectedService === service.id ? null : service.id)}
               >
                 <CardContent className="p-8">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 rounded-full bg-white/80 group-hover:bg-luxury-gold/20 transition-colors">
-                        <Icon className="w-6 h-6 text-luxury-navy group-hover:text-luxury-gold transition-colors" />
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="flex items-center gap-4">
+                      <div className="p-4 rounded-full bg-white/90 group-hover:bg-luxury-gold/20 transition-all duration-300 shadow-md">
+                        <Icon className="w-7 h-7 text-luxury-navy group-hover:text-luxury-gold transition-colors" />
                       </div>
-                      <Badge variant="secondary" className="text-xs">
+                      <Badge variant="secondary" className="text-sm font-semibold px-3 py-1">
                         {service.duration}
                       </Badge>
                     </div>
                     <div className="text-right">
-                      <div className="text-lg font-bold text-luxury-navy bg-luxury-gold/20 px-3 py-1 rounded-full">
+                      <div className="text-xl font-bold text-luxury-navy bg-luxury-gold/25 px-4 py-2 rounded-full shadow-sm">
                         {service.price}
                       </div>
                     </div>
                   </div>
 
-                  <h3 className="text-xl font-serif text-luxury-navy mb-2">{service.title}</h3>
-                  <p className="text-sm text-luxury-charcoal font-semibold mb-3">{service.subtitle}</p>
-                  <p className="text-neutral-600 mb-6 leading-relaxed">{service.description}</p>
+                  <div className="mb-6">
+                    <h3 className="text-2xl sm:text-3xl font-serif text-luxury-navy mb-3 font-bold leading-tight">{service.title}</h3>
+                    <p className="text-base text-luxury-gold font-bold mb-4 tracking-wide uppercase">{service.subtitle}</p>
+                    <p className="text-base sm:text-lg text-luxury-charcoal mb-6 leading-relaxed font-medium">{service.description}</p>
+                  </div>
 
-                  <ul className="space-y-2 mb-6">
+                  <ul className="space-y-3 mb-6">
                     {service.features.map((feature, index) => (
-                      <li key={index} className="flex items-center gap-2 text-sm text-neutral-700">
-                        <div className="w-1.5 h-1.5 rounded-full bg-luxury-gold" />
-                        {feature}
+                      <li key={index} className="flex items-center gap-3 text-base text-luxury-charcoal">
+                        <div className="w-2 h-2 rounded-full bg-luxury-gold flex-shrink-0" />
+                        <span className="font-medium">{feature}</span>
                       </li>
                     ))}
                   </ul>

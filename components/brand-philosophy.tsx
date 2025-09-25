@@ -24,25 +24,25 @@ export function BrandPhilosophy() {
   ]
 
   return (
-    <section id="about" className="py-24 bg-card">
+    <section id="about" className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">Our Philosophy</h2>
-          <p className="text-lg text-muted max-w-2xl mx-auto leading-relaxed">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-luxury-navy mb-6">Our Philosophy</h2>
+          <p className="text-lg text-luxury-charcoal max-w-2xl mx-auto leading-relaxed">
             Three pillars that define our commitment to exceptional craftsmanship
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {philosophies.map((item, index) => (
-            <Card key={index} className="border-border/50 hover:border-accent/50 transition-colors group">
+            <Card key={index} className="border-luxury-gold/20 hover:border-luxury-gold/50 transition-colors group bg-white shadow-sm">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                  <item.icon className="w-8 h-8 text-accent" />
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-luxury-gold/10 flex items-center justify-center group-hover:bg-luxury-gold/20 transition-colors">
+                  <item.icon className="w-8 h-8 text-luxury-gold" />
                 </div>
-                <h3 className="text-2xl font-serif font-semibold text-foreground mb-2">{item.title}</h3>
-                <p className="text-accent font-medium mb-4 tracking-wide">{item.subtitle}</p>
-                <p className="text-muted leading-relaxed">{item.description}</p>
+                <h3 className="text-2xl font-serif font-semibold text-luxury-navy mb-2">{item.title}</h3>
+                <p className="text-luxury-gold font-medium mb-4 tracking-wide">{item.subtitle}</p>
+                <p className="text-luxury-charcoal leading-relaxed">{item.description}</p>
               </CardContent>
             </Card>
           ))}
