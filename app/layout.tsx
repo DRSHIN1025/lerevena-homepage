@@ -12,6 +12,20 @@ export const metadata: Metadata = {
   title: "LEREVENA - Luxury Handcrafted Handbags",
   description: "45년 장인의 손길로 완성한 시대를 초월한 핸드메이드 럭셔리",
   generator: "v0.app",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes",
+  themeColor: "#001f3f",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "LEREVENA",
+  },
+  formatDetection: {
+    telephone: false,
+    date: false,
+    address: false,
+    email: false,
+    url: false,
+  },
 }
 
 export default function RootLayout({

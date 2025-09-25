@@ -115,3 +115,34 @@
 .text-pretty {
   text-wrap: pretty;
 }
+
+/* iOS Safari 호환성 */
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+/* iOS 줌 방지 */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  font-size: 16px;
+}
+
+/* iOS 스크롤 개선 */
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 안전 영역 지원 (iPhone X 이후) */
+@supports (padding: max(0px)) {
+  .safe-area-top {
+    padding-top: max(1rem, env(safe-area-inset-top));
+  }
+
+  .safe-area-bottom {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+}

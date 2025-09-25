@@ -10,8 +10,8 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-luxury-cream border-b border-luxury-gold/20 shadow-sm">
-      <div className="container mx-auto px-6 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-luxury-cream border-b border-luxury-gold/20 shadow-sm safe-area-top">
+      <div className="container mx-auto px-4 sm:px-6 py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
             <Link
