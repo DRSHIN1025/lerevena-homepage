@@ -1,0 +1,53 @@
+{
+  "name": "LEREVENA - Luxury Handcrafted Handbags",
+  "short_name": "LEREVENA",
+  "description": "45년 장인의 손길로 완성한 시대를 초월한 핸드메이드 럭셔리",
+  "start_url": "/lerevena-homepage/",
+  "scope": "/lerevena-homepage/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#001f3f",
+  "background_color": "#f5f5f0",
+  "categories": ["lifestyle", "shopping", "fashion"],
+  "lang": "ko",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/lerevena-homepage/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/lerevena-homepage/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/lerevena-homepage/apple-touch-icon-120x120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "/lerevena-homepage/apple-touch-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/lerevena-homepage/apple-touch-icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/lerevena-homepage/apple-touch-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/lerevena-homepage/luxury-handbag.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

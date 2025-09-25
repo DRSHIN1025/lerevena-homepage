@@ -1,0 +1,23 @@
+# Robots.txt for LEREVENA
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://drshin1025.github.io/lerevena-homepage/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow all search engines to index the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block access to specific files if needed
+# Disallow: /admin/
+# Disallow: /_next/
